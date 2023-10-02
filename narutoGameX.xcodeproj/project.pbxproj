@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		59120C8F2AB148280034A221 /* CreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59120C8E2AB148270034A221 /* CreateAccount.swift */; };
+		599068212AC362E100966D92 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599068202AC362E100966D92 /* User.swift */; };
+		599068232AC4B0F000966D92 /* LostPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599068222AC4B0F000966D92 /* LostPassword.swift */; };
+		59923D4D2AB3B1F700A30D78 /* CreateCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59923D4C2AB3B1F700A30D78 /* CreateCharacter.swift */; };
+		59923D4F2AB8ECC700A30D78 /* MyCharactersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59923D4E2AB8ECC700A30D78 /* MyCharactersCell.swift */; };
+		59923D512AB8F9CB00A30D78 /* InGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59923D502AB8F9CB00A30D78 /* InGame.swift */; };
+		59923D552ABA52B500A30D78 /* SaveAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59923D542ABA52B500A30D78 /* SaveAccount.swift */; };
+		599DF16A2AB1065F00E4E514 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599DF1692AB1065F00E4E514 /* AppDelegate.swift */; };
+		599DF16C2AB1065F00E4E514 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599DF16B2AB1065F00E4E514 /* SceneDelegate.swift */; };
+		599DF16E2AB1065F00E4E514 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599DF16D2AB1065F00E4E514 /* Login.swift */; };
+		599DF1742AB1065F00E4E514 /* narutoGameX.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 599DF1722AB1065F00E4E514 /* narutoGameX.xcdatamodeld */; };
+		599DF1762AB1066200E4E514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 599DF1752AB1066200E4E514 /* Assets.xcassets */; };
+		599DF1792AB1066200E4E514 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 599DF1772AB1066200E4E514 /* LaunchScreen.storyboard */; };
+		599DF1842AB1066300E4E514 /* narutoGameXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599DF1832AB1066300E4E514 /* narutoGameXTests.swift */; };
+		599DF18E2AB1066300E4E514 /* narutoGameXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599DF18D2AB1066300E4E514 /* narutoGameXUITests.swift */; };
+		599DF1902AB1066300E4E514 /* narutoGameXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599DF18F2AB1066300E4E514 /* narutoGameXUITestsLaunchTests.swift */; };
+		59A77F2B2ABE3E10003502F1 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A77F2A2ABE3E10003502F1 /* Music.swift */; };
+		59A77F2D2ABEFBE0003502F1 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A77F2C2ABEFBE0003502F1 /* Character.swift */; };
+		59A77F2F2ABF1D41003502F1 /* MyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A77F2E2ABF1D41003502F1 /* MyAccount.swift */; };
+		59A77F3B2ABF91E3003502F1 /* battlesong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 59A77F372ABF91E3003502F1 /* battlesong.mp3 */; };
+		59A77F3C2ABF91E3003502F1 /* mainsong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 59A77F382ABF91E3003502F1 /* mainsong.mp3 */; };
+		59A77F3E2ABF91E3003502F1 /* narutoselected.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 59A77F3A2ABF91E3003502F1 /* narutoselected.mp3 */; };
+		59A77F402AC04BEC003502F1 /* SaveCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A77F3F2AC04BEC003502F1 /* SaveCharacter.swift */; };
+		59AE90A62AC275F0009F1114 /* sasukeselected.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 59AE90A52AC275F0009F1114 /* sasukeselected.mp3 */; };
+		59BBCB7B2AC8593C00050ADE /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BBCB7A2AC8593C00050ADE /* SessionManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		599DF1802AB1066300E4E514 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 599DF15E2AB1065F00E4E514 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 599DF1652AB1065F00E4E514;
+			remoteInfo = narutoGameX;
+		};
+		599DF18A2AB1066300E4E514 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 599DF15E2AB1065F00E4E514 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 599DF1652AB1065F00E4E514;
+			remoteInfo = narutoGameX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		59120C8E2AB148270034A221 /* CreateAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccount.swift; sourceTree = "<group>"; };
+		599068202AC362E100966D92 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		599068222AC4B0F000966D92 /* LostPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostPassword.swift; sourceTree = "<group>"; };
+		59923D4C2AB3B1F700A30D78 /* CreateCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCharacter.swift; sourceTree = "<group>"; };
+		59923D4E2AB8ECC700A30D78 /* MyCharactersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCharactersCell.swift; sourceTree = "<group>"; };
+		59923D502AB8F9CB00A30D78 /* InGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InGame.swift; sourceTree = "<group>"; };
+		59923D542ABA52B500A30D78 /* SaveAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAccount.swift; sourceTree = "<group>"; };
+		599DF1662AB1065F00E4E514 /* narutoGameX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = narutoGameX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		599DF1692AB1065F00E4E514 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		599DF16B2AB1065F00E4E514 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		599DF16D2AB1065F00E4E514 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		599DF1732AB1065F00E4E514 /* narutoGameX.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = narutoGameX.xcdatamodel; sourceTree = "<group>"; };
+		599DF1752AB1066200E4E514 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		599DF1782AB1066200E4E514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		599DF17A2AB1066200E4E514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		599DF17F2AB1066300E4E514 /* narutoGameXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = narutoGameXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		599DF1832AB1066300E4E514 /* narutoGameXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = narutoGameXTests.swift; sourceTree = "<group>"; };
+		599DF1892AB1066300E4E514 /* narutoGameXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = narutoGameXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		599DF18D2AB1066300E4E514 /* narutoGameXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = narutoGameXUITests.swift; sourceTree = "<group>"; };
+		599DF18F2AB1066300E4E514 /* narutoGameXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = narutoGameXUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		59A77F2A2ABE3E10003502F1 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		59A77F2C2ABEFBE0003502F1 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		59A77F2E2ABF1D41003502F1 /* MyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccount.swift; sourceTree = "<group>"; };
+		59A77F372ABF91E3003502F1 /* battlesong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = battlesong.mp3; sourceTree = "<group>"; };
+		59A77F382ABF91E3003502F1 /* mainsong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mainsong.mp3; sourceTree = "<group>"; };
+		59A77F3A2ABF91E3003502F1 /* narutoselected.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = narutoselected.mp3; sourceTree = "<group>"; };
+		59A77F3F2AC04BEC003502F1 /* SaveCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCharacter.swift; sourceTree = "<group>"; };
+		59AE90A52AC275F0009F1114 /* sasukeselected.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sasukeselected.mp3; sourceTree = "<group>"; };
+		59BBCB7A2AC8593C00050ADE /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		599DF1632AB1065F00E4E514 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		599DF17C2AB1066300E4E514 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		599DF1862AB1066300E4E514 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59923D532AB8FEB600A30D78 /* Suporte */ = {
+			isa = PBXGroup;
+			children = (
+				599DF1752AB1066200E4E514 /* Assets.xcassets */,
+				599DF1772AB1066200E4E514 /* LaunchScreen.storyboard */,
+			);
+			path = Suporte;
+			sourceTree = "<group>";
+		};
+		599DF15D2AB1065F00E4E514 = {
+			isa = PBXGroup;
+			children = (
+				599DF1692AB1065F00E4E514 /* AppDelegate.swift */,
+				599DF16B2AB1065F00E4E514 /* SceneDelegate.swift */,
+				599DF1722AB1065F00E4E514 /* narutoGameX.xcdatamodeld */,
+				599DF1682AB1065F00E4E514 /* narutoGameX */,
+				599DF1822AB1066300E4E514 /* narutoGameXTests */,
+				599DF18C2AB1066300E4E514 /* narutoGameXUITests */,
+				599DF1672AB1065F00E4E514 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		599DF1672AB1065F00E4E514 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				599DF1662AB1065F00E4E514 /* narutoGameX.app */,
+				599DF17F2AB1066300E4E514 /* narutoGameXTests.xctest */,
+				599DF1892AB1066300E4E514 /* narutoGameXUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		599DF1682AB1065F00E4E514 /* narutoGameX */ = {
+			isa = PBXGroup;
+			children = (
+				599DF16D2AB1065F00E4E514 /* Login.swift */,
+				599068222AC4B0F000966D92 /* LostPassword.swift */,
+				59120C8E2AB148270034A221 /* CreateAccount.swift */,
+				59923D4C2AB3B1F700A30D78 /* CreateCharacter.swift */,
+				59A77F2E2ABF1D41003502F1 /* MyAccount.swift */,
+				59923D502AB8F9CB00A30D78 /* InGame.swift */,
+				599068202AC362E100966D92 /* User.swift */,
+				59A77F2C2ABEFBE0003502F1 /* Character.swift */,
+				59923D4E2AB8ECC700A30D78 /* MyCharactersCell.swift */,
+				59923D542ABA52B500A30D78 /* SaveAccount.swift */,
+				59A77F3F2AC04BEC003502F1 /* SaveCharacter.swift */,
+				59BBCB7A2AC8593C00050ADE /* SessionManager.swift */,
+				59A77F2A2ABE3E10003502F1 /* Music.swift */,
+				599DF17A2AB1066200E4E514 /* Info.plist */,
+				59A77F362ABF91A6003502F1 /* Sounds */,
+				59923D532AB8FEB600A30D78 /* Suporte */,
+			);
+			path = narutoGameX;
+			sourceTree = "<group>";
+		};
+		599DF1822AB1066300E4E514 /* narutoGameXTests */ = {
+			isa = PBXGroup;
+			children = (
+				599DF1832AB1066300E4E514 /* narutoGameXTests.swift */,
+			);
+			path = narutoGameXTests;
+			sourceTree = "<group>";
+		};
+		599DF18C2AB1066300E4E514 /* narutoGameXUITests */ = {
+			isa = PBXGroup;
+			children = (
+				599DF18D2AB1066300E4E514 /* narutoGameXUITests.swift */,
+				599DF18F2AB1066300E4E514 /* narutoGameXUITestsLaunchTests.swift */,
+			);
+			path = narutoGameXUITests;
+			sourceTree = "<group>";
+		};
+		59A77F362ABF91A6003502F1 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				59A77F372ABF91E3003502F1 /* battlesong.mp3 */,
+				59AE90A52AC275F0009F1114 /* sasukeselected.mp3 */,
+				59A77F382ABF91E3003502F1 /* mainsong.mp3 */,
+				59A77F3A2ABF91E3003502F1 /* narutoselected.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		599DF1652AB1065F00E4E514 /* narutoGameX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 599DF1932AB1066300E4E514 /* Build configuration list for PBXNativeTarget "narutoGameX" */;
+			buildPhases = (
+				599DF1622AB1065F00E4E514 /* Sources */,
+				599DF1632AB1065F00E4E514 /* Frameworks */,
+				599DF1642AB1065F00E4E514 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = narutoGameX;
+			productName = narutoGameX;
+			productReference = 599DF1662AB1065F00E4E514 /* narutoGameX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		599DF17E2AB1066300E4E514 /* narutoGameXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 599DF1962AB1066300E4E514 /* Build configuration list for PBXNativeTarget "narutoGameXTests" */;
+			buildPhases = (
+				599DF17B2AB1066300E4E514 /* Sources */,
+				599DF17C2AB1066300E4E514 /* Frameworks */,
+				599DF17D2AB1066300E4E514 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				599DF1812AB1066300E4E514 /* PBXTargetDependency */,
+			);
+			name = narutoGameXTests;
+			productName = narutoGameXTests;
+			productReference = 599DF17F2AB1066300E4E514 /* narutoGameXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		599DF1882AB1066300E4E514 /* narutoGameXUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 599DF1992AB1066300E4E514 /* Build configuration list for PBXNativeTarget "narutoGameXUITests" */;
+			buildPhases = (
+				599DF1852AB1066300E4E514 /* Sources */,
+				599DF1862AB1066300E4E514 /* Frameworks */,
+				599DF1872AB1066300E4E514 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				599DF18B2AB1066300E4E514 /* PBXTargetDependency */,
+			);
+			name = narutoGameXUITests;
+			productName = narutoGameXUITests;
+			productReference = 599DF1892AB1066300E4E514 /* narutoGameXUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		599DF15E2AB1065F00E4E514 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					599DF1652AB1065F00E4E514 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					599DF17E2AB1066300E4E514 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 599DF1652AB1065F00E4E514;
+					};
+					599DF1882AB1066300E4E514 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 599DF1652AB1065F00E4E514;
+					};
+				};
+			};
+			buildConfigurationList = 599DF1612AB1065F00E4E514 /* Build configuration list for PBXProject "narutoGameX" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 599DF15D2AB1065F00E4E514;
+			productRefGroup = 599DF1672AB1065F00E4E514 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				599DF1652AB1065F00E4E514 /* narutoGameX */,
+				599DF17E2AB1066300E4E514 /* narutoGameXTests */,
+				599DF1882AB1066300E4E514 /* narutoGameXUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		599DF1642AB1065F00E4E514 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59A77F3B2ABF91E3003502F1 /* battlesong.mp3 in Resources */,
+				599DF1792AB1066200E4E514 /* LaunchScreen.storyboard in Resources */,
+				59A77F3E2ABF91E3003502F1 /* narutoselected.mp3 in Resources */,
+				59A77F3C2ABF91E3003502F1 /* mainsong.mp3 in Resources */,
+				599DF1762AB1066200E4E514 /* Assets.xcassets in Resources */,
+				59AE90A62AC275F0009F1114 /* sasukeselected.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		599DF17D2AB1066300E4E514 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		599DF1872AB1066300E4E514 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		599DF1622AB1065F00E4E514 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				599068232AC4B0F000966D92 /* LostPassword.swift in Sources */,
+				599068212AC362E100966D92 /* User.swift in Sources */,
+				59A77F2B2ABE3E10003502F1 /* Music.swift in Sources */,
+				59923D552ABA52B500A30D78 /* SaveAccount.swift in Sources */,
+				59923D512AB8F9CB00A30D78 /* InGame.swift in Sources */,
+				59A77F402AC04BEC003502F1 /* SaveCharacter.swift in Sources */,
+				599DF16E2AB1065F00E4E514 /* Login.swift in Sources */,
+				59A77F2D2ABEFBE0003502F1 /* Character.swift in Sources */,
+				599DF16A2AB1065F00E4E514 /* AppDelegate.swift in Sources */,
+				59A77F2F2ABF1D41003502F1 /* MyAccount.swift in Sources */,
+				59923D4F2AB8ECC700A30D78 /* MyCharactersCell.swift in Sources */,
+				59120C8F2AB148280034A221 /* CreateAccount.swift in Sources */,
+				59923D4D2AB3B1F700A30D78 /* CreateCharacter.swift in Sources */,
+				599DF16C2AB1065F00E4E514 /* SceneDelegate.swift in Sources */,
+				59BBCB7B2AC8593C00050ADE /* SessionManager.swift in Sources */,
+				599DF1742AB1065F00E4E514 /* narutoGameX.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		599DF17B2AB1066300E4E514 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				599DF1842AB1066300E4E514 /* narutoGameXTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		599DF1852AB1066300E4E514 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				599DF1902AB1066300E4E514 /* narutoGameXUITestsLaunchTests.swift in Sources */,
+				599DF18E2AB1066300E4E514 /* narutoGameXUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		599DF1812AB1066300E4E514 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 599DF1652AB1065F00E4E514 /* narutoGameX */;
+			targetProxy = 599DF1802AB1066300E4E514 /* PBXContainerItemProxy */;
+		};
+		599DF18B2AB1066300E4E514 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 599DF1652AB1065F00E4E514 /* narutoGameX */;
+			targetProxy = 599DF18A2AB1066300E4E514 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		599DF1772AB1066200E4E514 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				599DF1782AB1066200E4E514 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		599DF1912AB1066300E4E514 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		599DF1922AB1066300E4E514 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		599DF1942AB1066300E4E514 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TL58LJQJ5S;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = narutoGameX/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.renatoHissa.narutoGameX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		599DF1952AB1066300E4E514 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TL58LJQJ5S;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = narutoGameX/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.renatoHissa.narutoGameX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		599DF1972AB1066300E4E514 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TL58LJQJ5S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.renatoHissa.narutoGameXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/narutoGameX.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/narutoGameX";
+			};
+			name = Debug;
+		};
+		599DF1982AB1066300E4E514 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TL58LJQJ5S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.renatoHissa.narutoGameXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/narutoGameX.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/narutoGameX";
+			};
+			name = Release;
+		};
+		599DF19A2AB1066300E4E514 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TL58LJQJ5S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.renatoHissa.narutoGameXUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = narutoGameX;
+			};
+			name = Debug;
+		};
+		599DF19B2AB1066300E4E514 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TL58LJQJ5S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.renatoHissa.narutoGameXUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = narutoGameX;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		599DF1612AB1065F00E4E514 /* Build configuration list for PBXProject "narutoGameX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				599DF1912AB1066300E4E514 /* Debug */,
+				599DF1922AB1066300E4E514 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		599DF1932AB1066300E4E514 /* Build configuration list for PBXNativeTarget "narutoGameX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				599DF1942AB1066300E4E514 /* Debug */,
+				599DF1952AB1066300E4E514 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		599DF1962AB1066300E4E514 /* Build configuration list for PBXNativeTarget "narutoGameXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				599DF1972AB1066300E4E514 /* Debug */,
+				599DF1982AB1066300E4E514 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		599DF1992AB1066300E4E514 /* Build configuration list for PBXNativeTarget "narutoGameXUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				599DF19A2AB1066300E4E514 /* Debug */,
+				599DF19B2AB1066300E4E514 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		599DF1722AB1065F00E4E514 /* narutoGameX.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				599DF1732AB1065F00E4E514 /* narutoGameX.xcdatamodel */,
+			);
+			currentVersion = 599DF1732AB1065F00E4E514 /* narutoGameX.xcdatamodel */;
+			path = narutoGameX.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 599DF15E2AB1065F00E4E514 /* Project object */;
+}
