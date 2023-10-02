@@ -32,6 +32,9 @@
 		59A77F402AC04BEC003502F1 /* SaveCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A77F3F2AC04BEC003502F1 /* SaveCharacter.swift */; };
 		59AE90A62AC275F0009F1114 /* sasukeselected.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 59AE90A52AC275F0009F1114 /* sasukeselected.mp3 */; };
 		59BBCB7B2AC8593C00050ADE /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BBCB7A2AC8593C00050ADE /* SessionManager.swift */; };
+		59BBCB7F2ACB3F9F00050ADE /* clickpass.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 59BBCB7E2ACB3F9E00050ADE /* clickpass.mp3 */; };
+		59BBCB812ACB469B00050ADE /* error.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 59BBCB802ACB469B00050ADE /* error.mp3 */; };
+		59BBCB852ACB618200050ADE /* musicadefundo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 59BBCB842ACB618200050ADE /* musicadefundo.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,9 @@
 		59A77F3F2AC04BEC003502F1 /* SaveCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCharacter.swift; sourceTree = "<group>"; };
 		59AE90A52AC275F0009F1114 /* sasukeselected.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sasukeselected.mp3; sourceTree = "<group>"; };
 		59BBCB7A2AC8593C00050ADE /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		59BBCB7E2ACB3F9E00050ADE /* clickpass.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = clickpass.mp3; sourceTree = "<group>"; };
+		59BBCB802ACB469B00050ADE /* error.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = error.mp3; sourceTree = "<group>"; };
+		59BBCB842ACB618200050ADE /* musicadefundo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = musicadefundo.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +190,9 @@
 			isa = PBXGroup;
 			children = (
 				59A77F372ABF91E3003502F1 /* battlesong.mp3 */,
+				59BBCB7E2ACB3F9E00050ADE /* clickpass.mp3 */,
+				59BBCB802ACB469B00050ADE /* error.mp3 */,
+				59BBCB842ACB618200050ADE /* musicadefundo.mp3 */,
 				59AE90A52AC275F0009F1114 /* sasukeselected.mp3 */,
 				59A77F382ABF91E3003502F1 /* mainsong.mp3 */,
 				59A77F3A2ABF91E3003502F1 /* narutoselected.mp3 */,
@@ -295,11 +304,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59BBCB7F2ACB3F9F00050ADE /* clickpass.mp3 in Resources */,
+				59BBCB812ACB469B00050ADE /* error.mp3 in Resources */,
 				59A77F3B2ABF91E3003502F1 /* battlesong.mp3 in Resources */,
 				599DF1792AB1066200E4E514 /* LaunchScreen.storyboard in Resources */,
 				59A77F3E2ABF91E3003502F1 /* narutoselected.mp3 in Resources */,
 				59A77F3C2ABF91E3003502F1 /* mainsong.mp3 in Resources */,
 				599DF1762AB1066200E4E514 /* Assets.xcassets in Resources */,
+				59BBCB852ACB618200050ADE /* musicadefundo.mp3 in Resources */,
 				59AE90A62AC275F0009F1114 /* sasukeselected.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

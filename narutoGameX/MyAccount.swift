@@ -61,6 +61,9 @@ class MyAccount: UIViewController {
     var tableView: UITableView!
     var characters = [Character]()
     var selectedCharacterIndex: Int?
+    var clickpass = "clickpass"
+    var soundError = "error"
+    let musicPlayer = Music()
     
     struct Cells {
         static let narutoCell = "NarutoCell"
@@ -82,6 +85,7 @@ class MyAccount: UIViewController {
     @objc func earesedCharacter() {
         if let selectedIndex = selectedCharacterIndex {
             let character = characters[selectedIndex]
+            musicPlayer.playActionSound(soundFileName: soundError)
             let alertController = UIAlertController(title: "Confirmação", message: "Tem certeza que deseja apagar '\(character.name)'?", preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "Sim", style: .destructive) { _ in
                 
@@ -106,10 +110,18 @@ class MyAccount: UIViewController {
     }
     
     @objc func enter() {
-        let passNewAcc = InGame()
-        navigationController?.pushViewController(passNewAcc, animated: true)
+        if let selectedCharacterIndex = selectedCharacterIndex {
+            musicPlayer.playActionSound(soundFileName: clickpass)
+            let passNewAcc = InGame()
+            navigationController?.pushViewController(passNewAcc, animated: true)
+        } else {
+            musicPlayer.playActionSound(soundFileName: soundError)
+            let alertController = UIAlertController(title: "Aviso", message: "Escolha um personagem para iniciar o jogo!", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            present(alertController, animated: true, completion: nil)
+        }
     }
-    
+
     @objc func back() {
         navigationController?.popViewController(animated: true)
     }

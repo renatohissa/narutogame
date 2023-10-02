@@ -7,7 +7,7 @@ class Music {
     var actionAudioPlayer: AVAudioPlayer?
     
     func playBackgroundMusic() {
-        guard let soundURL = Bundle.main.url(forResource: "mainsong", withExtension: "mp3") else {
+        guard let soundURL = Bundle.main.url(forResource: "battlesong", withExtension: "mp3") else {
             print("Arquivo de som de fundo não encontrado.")
             return
         }

@@ -68,6 +68,10 @@ class CreateAccount: UIViewController {
         return imageView
     }()
     
+    let musicPlayer = Music()
+    var clickpass = "clickpass"
+    var soundError = "error"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -99,8 +103,10 @@ class CreateAccount: UIViewController {
                 }
                 let user = User(login: login, password: password)
                 SaveAccount.shared.saveUser(user)
+                musicPlayer.playActionSound(soundFileName: clickpass)
                 showSuccessAndNavigate()
             } else {
+                musicPlayer.playActionSound(soundFileName: soundError)
                 self.alert(title: "Use um e-mail válido, no mínimo 6 caracteres em sua senha e a confirme corretamente!")
             }
         }
@@ -122,6 +128,7 @@ class CreateAccount: UIViewController {
     }
     
     private func checkTextAlert() {
+        musicPlayer.playActionSound(soundFileName: soundError)
         if createLogin.text?.isEmpty == true || createEmail.text?.isEmpty == true || createPassword.text?.isEmpty == true || repeatPassword.text?.isEmpty == true {
             alert(title: "Preencha todos dados solicitados")
         }

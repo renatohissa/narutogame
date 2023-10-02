@@ -4,7 +4,7 @@ class LostPassword: UIViewController {
     
     private let screenImageView: UIImageView = {
         let screenImageView = UIImageView()
-        screenImageView.image = UIImage(named: "background7")
+        screenImageView.image = UIImage(named: "background8")
         screenImageView.contentMode = .scaleToFill
         screenImageView.translatesAutoresizingMaskIntoConstraints = false
         return screenImageView
@@ -69,6 +69,10 @@ class LostPassword: UIViewController {
         return emailToken
     }()
     
+    private let musicPlayer = Music()
+    var clickpass = "clickpass"
+    var soundError = "error"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -81,24 +85,29 @@ class LostPassword: UIViewController {
         guard let loginDoUsuario = login.text, !loginDoUsuario.isEmpty,
               let newPassword = password.text, !newPassword.isEmpty,
               let repeatNewPassword = repeatPassword.text, !repeatNewPassword.isEmpty else {
+            musicPlayer.playActionSound(soundFileName: soundError)
             showError(message: "Preencha os campos corretamente.")
             return
         }
         
         guard newPassword == repeatNewPassword else {
+            musicPlayer.playActionSound(soundFileName: soundError)
             showError(message: "As senhas não coincidem.")
             return
         }
         
         guard newPassword.count >= 6 else {
+            musicPlayer.playActionSound(soundFileName: soundError)
             showError(message: "A senha deve ter no mínimo 6 caracteres.")
             return
         }
         if let existingUser = SaveAccount.shared.getUser(login: loginDoUsuario) {
+            musicPlayer.playActionSound(soundFileName: clickpass)
             existingUser.password = newPassword
             SaveAccount.shared.updateUserPassword(login: loginDoUsuario, newPassword: newPassword)
             showSuccessAndNavigate()
         } else {
+            musicPlayer.playActionSound(soundFileName: soundError)
             showError(message: "Usuário não encontrado.")
         }
     }

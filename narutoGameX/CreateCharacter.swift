@@ -137,8 +137,10 @@ class CreateCharacter: UIViewController {
         }
         return sasukeMoveImage
     }()
-    
-    let musicPlayer = Music()
+
+    var clickpass = "clickpass"
+    var soundError = "error"
+    private let musicPlayer = Music()
     private var animationTimer: Timer?
     private var currentOpacity: CGFloat = 0.5
     private let opacityChangeAmount: CGFloat = 0.1
@@ -163,6 +165,7 @@ class CreateCharacter: UIViewController {
     }
     
     @objc func telaDePersonagens() {
+        musicPlayer.playActionSound(soundFileName: clickpass)
         let tela = MyAccount()
         navigationController?.pushViewController(tela, animated: true)
         textNickName1.text = ""
@@ -174,12 +177,12 @@ class CreateCharacter: UIViewController {
             return
         }
         
-        if characterImageIdentifier {
+        if characterImageIdentifier && !textNickName1.text!.isEmpty {
     
             if let loggedInUserLogin = SessionManager.shared.getLoggedInUserLogin() {
                 let character = Character(name: characterName, image: characterImage)
                 SaveAccount.shared.saveCharacterForUser(login: loggedInUserLogin, character: character)
-                
+                musicPlayer.playActionSound(soundFileName: clickpass)
                 let alertController = UIAlertController(title: "Sucesso", message: "Personagem criado com sucesso!", preferredStyle: .alert)
                 alertController.addAction(UIAlertAction(title: "Ok", style: .default) { _ in
                     self.goToHome()
@@ -188,6 +191,7 @@ class CreateCharacter: UIViewController {
                 textNickName1.text = ""
             }
         } else {
+            musicPlayer.playActionSound(soundFileName: soundError)
             showError()
         }
     }
@@ -201,7 +205,7 @@ class CreateCharacter: UIViewController {
     }
     
     func showError() {
-        let alertController = UIAlertController(title: "Erro", message: "Selecione um personagem para jogar.", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Erro", message: "Selecione um personagem para jogar e/ou preencha o nickname.", preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "Ok", style: .default))
         self.present(alertController, animated: true, completion: nil)
     }

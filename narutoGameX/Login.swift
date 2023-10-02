@@ -65,6 +65,8 @@ class Login: UIViewController {
     }()
     
     let musicPlayer = Music()
+    var clickpass = "clickpass"
+    var soundError = "error"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,26 +80,30 @@ class Login: UIViewController {
     }
     
     @objc func recoveryPassword() {
+        musicPlayer.playActionSound(soundFileName: clickpass)
         let passRecovery = LostPassword()
         navigationController?.pushViewController(passRecovery, animated: true)
     }
     
     @objc func cadastroButtonPressed() {
+        musicPlayer.playActionSound(soundFileName: clickpass)
         let passNewAcc = CreateAccount()
         navigationController?.pushViewController(passNewAcc, animated: true)
     }
     
     @objc func loginButtonPressed() {
-        warningAlert()
+        checkText()
         guard let enteredLogin = login.text, let enteredPassword = password.text else { return }
         
         if let storedUser = SaveAccount.shared.getUser(login: enteredLogin), enteredPassword == storedUser.password {
+            musicPlayer.playActionSound(soundFileName: clickpass)
             SessionManager.shared.loginUser(withLogin: enteredLogin)
             let createViewController = CreateCharacter()
             navigationController?.pushViewController(createViewController, animated: true)
             login.text = ""
             password.text = ""
         } else {
+            musicPlayer.playActionSound(soundFileName: soundError)
             let alertController = UIAlertController(title: "Erro", message: "Login ou senha incorretos.", preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alertController, animated: true, completion: nil)
@@ -111,8 +117,9 @@ class Login: UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
     
-    private func warningAlert() {
+    private func checkText() {
         if login.text?.isEmpty == true || password.text?.isEmpty == true {
+            musicPlayer.playActionSound(soundFileName: soundError)
             alert(title: "Preencha todos dados solicitados")
         }
         else {

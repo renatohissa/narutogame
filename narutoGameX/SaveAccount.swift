@@ -5,6 +5,8 @@ class SaveAccount {
     static let shared = SaveAccount()
     private let userDefaults = UserDefaults.standard
     private let userKey = "users"
+    var soundError = "error"
+    let musicPlayer = Music()
     
     private func getUsers() -> [User] {
         if let usersData = userDefaults.data(forKey: userKey) {
@@ -29,6 +31,7 @@ class SaveAccount {
         }
         
         if userExists {
+            musicPlayer.playActionSound(soundFileName: soundError)
             let alertController = UIAlertController(title: "Aviso", message: "O nome de usuário já está em uso.", preferredStyle: .alert)
             let alertButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
             alertController.addAction(alertButton)
@@ -45,6 +48,7 @@ class SaveAccount {
         guard let existingUserIndex = users.firstIndex(where: { user in
             return user.login == login
         }) else {
+            musicPlayer.playActionSound(soundFileName: soundError)
             let alertController = UIAlertController(title: "Aviso", message: "O usuário não existe.", preferredStyle: .alert)
             let alertButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
             alertController.addAction(alertButton)
