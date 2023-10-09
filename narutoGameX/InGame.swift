@@ -2,29 +2,27 @@ import UIKit
 
 class InGame: UIViewController {
     
-    private let backGroundImage: UIImageView = {
-        let backGroundImage = UIImageView()
-        backGroundImage.image = UIImage(named: "backgroundimagex")
-        backGroundImage.contentMode = .scaleToFill
-        backGroundImage.translatesAutoresizingMaskIntoConstraints = false
-        return backGroundImage
-    }()
+    private let backgroundImage = ImageDefault(imageName: "backgroundimagex")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupConstraints()
+        setElements()
     }
     
-    private func setupConstraints() {
-        view.addSubview(backGroundImage)
+    private func setElements() {
+        setBackgroundImage()
+    }
+    
+    private func setBackgroundImage() {
+        view.addSubview(backgroundImage)
         
         NSLayoutConstraint.activate([
             
-            backGroundImage.topAnchor.constraint(equalTo: view.topAnchor),
-            backGroundImage.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            backGroundImage.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            backGroundImage.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            backgroundImage.topAnchor.constraint(equalTo: view.topAnchor),
+            backgroundImage.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            backgroundImage.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            backgroundImage.bottomAnchor.constraint(equalTo: view.bottomAnchor),
         
         ])
     }
